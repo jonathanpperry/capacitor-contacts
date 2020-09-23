@@ -1,18 +1,18 @@
-import { Component } from '@angular/core';
+import { Component } from "@angular/core";
 
-import { Contact } from '@capacitor-community/contacts';
+import { Contact } from "@capacitor-community/contacts";
 
-import { Plugins } from '@capacitor/core';
+import { Plugins } from "@capacitor/core";
 const { Contacts } = Plugins;
 
-import { CallNumber } from '@ionic-native/call-number/ngx';
-import { SMS } from '@ionic-native/sms/ngx';
-import { isPlatform } from '@ionic/angular';
+import { CallNumber } from "@ionic-native/call-number/ngx";
+import { SMS } from "@ionic-native/sms/ngx";
+import { isPlatform } from "@ionic/angular";
 
 @Component({
-  selector: 'app-home',
-  templateUrl: 'home.page.html',
-  styleUrls: ['home.page.scss']
+  selector: "app-home",
+  templateUrl: "home.page.html",
+  styleUrls: ["home.page.scss"],
 })
 export class HomePage {
   contacts = [];
@@ -21,14 +21,13 @@ export class HomePage {
   }
 
   async loadContacts() {
-    if (isPlatform('android')) {
+    if (isPlatform("android")) {
       let permission = await Contacts.getPermissions();
       if (!permission.granted) {
         return;
       }
     }
-    Contacts.getContacts().then(result => {
-      console.log(result);
+    Contacts.getContacts().then((result) => {
       this.contacts = result.contacts;
     });
   }
@@ -38,6 +37,6 @@ export class HomePage {
   }
 
   sendSms(contact: Contact) {
-    this.sms.send(contact.phoneNumbers[0], 'This is my pred');
+    this.sms.send(contact.phoneNumbers[0], "This is my pred");
   }
 }
