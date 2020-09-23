@@ -1,4 +1,4 @@
-package io.ionic.starter;
+package io.jonnyramen.capacitorcontacts;
 
 import android.os.Bundle;
 

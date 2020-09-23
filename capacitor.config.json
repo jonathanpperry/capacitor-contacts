@@ -1,6 +1,6 @@
 {
-  "appId": "io.ionic.starter",
-  "appName": "academyContacts",
+  "appId": "io.jonnyramen.capacitorcontacts",
+  "appName": "CapacitorContacts",
   "bundledWebRuntime": false,
   "npmClient": "npm",
   "webDir": "www",
