@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <resources>
-    <string name="app_name">CapacitorContacts</string>
-    <string name="title_activity_main">CapacitorContacts</string>
-    <string name="package_name">io.jonnyramen.capacitorcontacts</string>
-    <string name="custom_url_scheme">io.jonnyramen.capacitorcontacts</string>
+    <string name="app_name">ionicContacts</string>
+    <string name="title_activity_main">ionicContacts</string>
+    <string name="package_name">io.ionic.starter</string>
+    <string name="custom_url_scheme">io.ionic.starter</string>
 </resources>
